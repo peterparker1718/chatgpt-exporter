@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.19.1](https://github.com/pionxzh/chatgpt-exporter/compare/userscript-v2.19.0...userscript-v2.19.1) (2024-01-07)
+
+
+### Bug Fixes
+
+* improve timestamp injection ([e0eaa65](https://github.com/pionxzh/chatgpt-exporter/commit/e0eaa656f8bdf410e6c3ec78116c427a7fbd57b7))
+
 ## [2.19.0](https://github.com/pionxzh/chatgpt-exporter/compare/userscript-v2.18.1...userscript-v2.19.0) (2024-01-07)
 
 
