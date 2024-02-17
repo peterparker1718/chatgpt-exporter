@@ -1,20 +1,20 @@
-# README\_KR
+# README
 
 ## ChatGPT Exporter
 
-### [ChatGPT](https://chatgpt.com/) 의 채팅 기록을 내보내는 GreasyFork 스크립트
+### A GreasyFork script to export the chat history of [ChatGPT](https://chatgpt.com/)
 
 [![license](https://img.shields.io/github/license/pionxzh/chatgpt-exporter?color=red)](https://github.com/pionxzh/chatgpt-exporter/blob/master/LICENSE) [![release](https://img.shields.io/github/v/release/pionxzh/chatgpt-exporter?color=blue)](https://github.com/pionxzh/chatgpt-exporter/releases/latest) [![GreasyFork](https://img.shields.io/static/v1?label=%20\&message=GreasyFork\&style=flat-square\&labelColor=7B0000\&color=960000\&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3ggEBCQHM3fXsAAAAVdJREFUOMudkz2qwkAUhc/goBaGJBgUtBCZyj0ILkpwAW7Bws4yO3AHLiCtEFD8KVREkoiFxZzX5A2KGfN4F04zMN+ce+5c4LMUgDmANYBnrnV+plBSi+FwyHq9TgA2LQpvCiEiABwMBtzv95RSfoNEHy8DYBzHrNVqVEr9BWKcqNFoxF6vx3a7zc1mYyC73a4MogBg7vs+z+czO50OW60Wt9stK5UKp9Mpj8cjq9WqDTBHnjAdxzGQZrPJw+HA31oulzbAWgLoA0CWZVBKIY5jzGYzdLtdE9DlcrFNrY98zobqOA6TJKHW2jg4nU5sNBpFDp6mhVe5rsvVasUwDHm9Xqm15u12o+/7Hy0gD8KatOd5vN/v1FozTVN6nkchxFuI6hsAAIMg4OPxMJCXdtTbR7JJCMEgCJhlGUlyPB4XfumozInrupxMJpRSRtZlKoNYl+m/6/wDuWAjtPfsQuwAAAAASUVORK5CYII=)](https://greasyfork.org/scripts/456055-chatgpt-exporter)
 
-[English](<README (1).md>)   |   [Indonesia](README\_ID.md)   |   한국어   |   [Türkçe](README\_TR.md)
+English   |   [Indonesia](README\_ID.md)   |   [한국어](README\_KR.md)   |   [Türkçe](README\_TR.md)
 
 ![image](https://github.com/pionxzh/chatgpt-exporter/assets/9910706/1c864670-7912-4484-b4be-bdf5dde51557)
 
-### 설치하기
+### Install
 
-#### 사전 준비 조건
+#### Prerequisites
 
-`Tampermonkey` 설치하기
+Install `Tampermonkey`
 
 [![Chrome](https://user-images.githubusercontent.com/3750161/214147732-c75e96a4-48a4-4b64-b407-c2402e899a75.PNG)](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)    [![Firefox](https://user-images.githubusercontent.com/3750161/214148610-acdef778-753e-470e-8765-6cc97bca85ed.png)](https://addons.mozilla.org/firefox/addon/tampermonkey)    [![Chrome](https://user-images.githubusercontent.com/3750161/233201810-d1026855-0482-44c8-b1ec-c7247134473e.png)](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
 
@@ -26,35 +26,38 @@
 
 ##
 
-[📚 지원하는 형식](README\_KR.md#-지원하는-형식)   |   [💡 예제](README\_KR.md#-예제)   |   [🤝 기여하기](README\_KR.md#-기여하기)   |  [⭐ 별 기록](README\_KR.md#-별-기록)
+[📚 Supported Formats](<README (1).md#-supported-formats>)   |   [💡 Example](<README (1).md#-example>)   |   [🤝 Contribution](<README (1).md#-contribution>)   |   [⭐ Star History](<README (1).md#-star-history>)
 
 ##
 
-### 📚 지원하는 형식
+### 📚 Supported Formats
 
-* [텍스트](README\_KR.md#텍스트)
-* [HTML](README\_KR.md#HTML)
-* [Markdown](README\_KR.md#markdown)
-* [PNG](README\_KR.md#스크린샷)
-* [JSON](README\_KR.md#JSON)
+* [Text](<README (1).md#text>)
+* [HTML](<README (1).md#html>)
+* [Markdown](<README (1).md#markdown>)
+* [PNG](<README (1).md#screenshot>)
+* [JSON](<README (1).md#json>)
 
-### 💡 예제
+### 💡 Example
 
-#### 텍스트
+#### Text
 
 ```
-너:
-ChatGPT Exporter 를 만들고 있어요. 어떻게 생각하세요?
+You:
+I'm creating a ChatGPT Exporter. What do you think?
 
 ChatGPT:
-ChatGPT Exporter 를 만들 계획이신 것 같군요. ChatGPT 는 OpenAI 에서 학습한 대규모
-언어 모델로서, 주어진 입력에 기반하여 인간과 유사한 텍스트 응답을 생성하는 데
-사용됩니다. 이는 챗봇, 고객 문의에 대한 자동 응답 등 다양한 응용 분야에서 활용될 수
-있습니다.
+It sounds like you're planning on creating a tool that uses the ChatGPT model
+to export text. ChatGPT is a large language model trained by OpenAI that is
+designed to generate human-like text responses based on a given input. It can
+be used for a variety of applications, such as chatbots, automated responses
+to customer inquiries, and more.
 
-하지만 대규모 언어 모델인 ChatGPT는 특정 작업을 위해 특별히 훈련된 것은 아니기
-때문에 생성된 텍스트의 품질은 사용 방식과 적용되는 문맥에 따라 달라집니다. ChatGPT
-를 책임있게 사용하고 해당 상황에서의 잠재적인 결과를 고려하는 것이 중요합니다.
+However, please keep in mind that as a large language model, ChatGPT has not
+been specifically trained for any specific task, so the quality of the
+generated text will depend on how it is used and the context in which it is
+applied. It's important to use ChatGPT responsibly and consider the potential
+consequences of using it in any given situation.
 ```
 
 #### HTML
@@ -77,20 +80,13 @@ author: ChatGPT
 # ChatGPT Exporter Creation
 
 #### You:
-ChatGPT Exporter 를 만들고 있어요. 어떻게 생각하세요?
+I'm creating a ChatGPT Exporter. What do you think?
 
 #### ChatGPT:
-ChatGPT Exporter 를 만들 계획이신 것 같군요. ChatGPT 는 OpenAI 에서 학습한 대규모
-언어 모델로서, 주어진 입력에 기반하여 인간과 유사한 텍스트 응답을 생성하는 데
-사용됩니다. 이는 챗봇, 고객 문의에 대한 자동 응답 등 다양한 응용 분야에서 활용될 수
-있습니다.
-
-하지만 대규모 언어 모델인 ChatGPT는 특정 작업을 위해 특별히 훈련된 것은 아니기
-때문에 생성된 텍스트의 품질은 사용 방식과 적용되는 문맥에 따라 달라집니다. ChatGPT
-를 책임있게 사용하고 해당 상황에서의 잠재적인 결과를 고려하는 것이 중요합니다.
+It sounds like you're planning on creating a tool that uses the ChatGPT model to export text. ChatGPT is a large language model trained by OpenAI that is designed to generate human-like text responses based on a given input. It can be used for a variety of applications, such as chatbots, automated responses to customer inquiries, and more.
 ```
 
-#### 스크린샷
+#### Screenshot
 
 <div align="center">
 
@@ -100,11 +96,11 @@ ChatGPT Exporter 를 만들 계획이신 것 같군요. ChatGPT 는 OpenAI 에�
 
 #### JSON
 
-API `https://chat.openai.com/backend-api/conversation/[id]` 에서 얻은 원시 콘텐츠
+the raw content from API `https://chat.openai.com/backend-api/conversation/[id]`
 
 <details>
 
-<summary>클릭하여 보기</summary>
+<summary>Click to see</summary>
 
 ```json
 {
@@ -206,14 +202,14 @@ API `https://chat.openai.com/backend-api/conversation/[id]` 에서 얻은 원시
 
 </details>
 
-### 🤝 기여하기
+### 🤝 Contribution
 
-[CONTRIBUTING.md](CONTRIBUTING.md) 를 참조하세요
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
-### ⭐ 별 기록
+### ⭐ Star History
 
 <div align="center">
 
-<img src="https://api.star-history.com/svg?repos=pionxzh/chatgpt-exporter&#x26;type=Date" alt="별 기록 차트" height="400" width="600">
+<img src="https://api.star-history.com/svg?repos=pionxzh/chatgpt-exporter&#x26;type=Date" alt="Star History Chart" height="400" width="600">
 
 </div>

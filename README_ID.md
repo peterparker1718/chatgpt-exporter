@@ -1,66 +1,46 @@
-<h1 align="center">ChatGPT Exporter</h1>
+# README\_ID
 
-<div align="center">
+## ChatGPT Exporter
 
-## Skrip GreasyFork untuk mengekspor riwayat percakapan [ChatGPT](https://chatgpt.com/)
+### Skrip GreasyFork untuk mengekspor riwayat percakapan [ChatGPT](https://chatgpt.com/)
 
-[![license][license-image]][license-url]
-[![release][release-image]][release-url]
-[![GreasyFork][GreasyFork-image]][GreasyFork-url]
+[![license](https://img.shields.io/github/license/pionxzh/chatgpt-exporter?color=red)](https://github.com/pionxzh/chatgpt-exporter/blob/master/LICENSE) [![release](https://img.shields.io/github/v/release/pionxzh/chatgpt-exporter?color=blue)](https://github.com/pionxzh/chatgpt-exporter/releases/latest) [![GreasyFork](https://img.shields.io/static/v1?label=%20\&message=GreasyFork\&style=flat-square\&labelColor=7B0000\&color=960000\&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3ggEBCQHM3fXsAAAAVdJREFUOMudkz2qwkAUhc/goBaGJBgUtBCZyj0ILkpwAW7Bws4yO3AHLiCtEFD8KVREkoiFxZzX5A2KGfN4F04zMN+ce+5c4LMUgDmANYBnrnV+plBSi+FwyHq9TgA2LQpvCiEiABwMBtzv95RSfoNEHy8DYBzHrNVqVEr9BWKcqNFoxF6vx3a7zc1mYyC73a4MogBg7vs+z+czO50OW60Wt9stK5UKp9Mpj8cjq9WqDTBHnjAdxzGQZrPJw+HA31oulzbAWgLoA0CWZVBKIY5jzGYzdLtdE9DlcrFNrY98zobqOA6TJKHW2jg4nU5sNBpFDp6mhVe5rsvVasUwDHm9Xqm15u12o+/7Hy0gD8KatOd5vN/v1FozTVN6nkchxFuI6hsAAIMg4OPxMJCXdtTbR7JJCMEgCJhlGUlyPB4XfumozInrupxMJpRSRtZlKoNYl+m/6/wDuWAjtPfsQuwAAAAASUVORK5CYII=)](https://greasyfork.org/scripts/456055-chatgpt-exporter)
 
-[license-image]: https://img.shields.io/github/license/pionxzh/chatgpt-exporter?color=red
-[license-url]: https://github.com/pionxzh/chatgpt-exporter/blob/master/LICENSE
-[release-image]: https://img.shields.io/github/v/release/pionxzh/chatgpt-exporter?color=blue
-[release-url]: https://github.com/pionxzh/chatgpt-exporter/releases/latest
-[GreasyFork-image]: https://img.shields.io/static/v1?label=%20&message=GreasyFork&style=flat-square&labelColor=7B0000&color=960000&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3ggEBCQHM3fXsAAAAVdJREFUOMudkz2qwkAUhc/goBaGJBgUtBCZyj0ILkpwAW7Bws4yO3AHLiCtEFD8KVREkoiFxZzX5A2KGfN4F04zMN+ce+5c4LMUgDmANYBnrnV+plBSi+FwyHq9TgA2LQpvCiEiABwMBtzv95RSfoNEHy8DYBzHrNVqVEr9BWKcqNFoxF6vx3a7zc1mYyC73a4MogBg7vs+z+czO50OW60Wt9stK5UKp9Mpj8cjq9WqDTBHnjAdxzGQZrPJw+HA31oulzbAWgLoA0CWZVBKIY5jzGYzdLtdE9DlcrFNrY98zobqOA6TJKHW2jg4nU5sNBpFDp6mhVe5rsvVasUwDHm9Xqm15u12o+/7Hy0gD8KatOd5vN/v1FozTVN6nkchxFuI6hsAAIMg4OPxMJCXdtTbR7JJCMEgCJhlGUlyPB4XfumozInrupxMJpRSRtZlKoNYl+m/6/wDuWAjtPfsQuwAAAAASUVORK5CYII=
-[GreasyFork-url]: https://greasyfork.org/scripts/456055-chatgpt-exporter
-
-[English](./README.md) &nbsp;&nbsp;|&nbsp;&nbsp; Indonesia &nbsp;&nbsp;|&nbsp;&nbsp; [한국어](./README_KR.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Türkçe](./README_TR.md)
+[English](<README (1).md>)   |   Indonesia   |   [한국어](README\_KR.md)   |   [Türkçe](README\_TR.md)
 
 ![image](https://github.com/pionxzh/chatgpt-exporter/assets/9910706/0697599c-2432-4eae-bc6a-ea4b6ecf89aa)
 
-## Instalasi
+### Instalasi
 
-### Prasyarat
+#### Prasyarat
 
-<align>Instal <b>`Tampermonkey`</b></align>
+Instal `Tampermonkey`
 
-[<img src="https://user-images.githubusercontent.com/3750161/214147732-c75e96a4-48a4-4b64-b407-c2402e899a75.PNG" height="60" alt="Chrome" valign="middle">][link-chrome] &nbsp;&nbsp; [<img src="https://user-images.githubusercontent.com/3750161/214148610-acdef778-753e-470e-8765-6cc97bca85ed.png" height="60" alt="Firefox" valign="middle">][link-firefox] &nbsp;&nbsp; [<img src="https://user-images.githubusercontent.com/3750161/233201810-d1026855-0482-44c8-b1ec-c7247134473e.png" height="60" alt="Chrome" valign="middle">][link-edge]
+[![Chrome](https://user-images.githubusercontent.com/3750161/214147732-c75e96a4-48a4-4b64-b407-c2402e899a75.PNG)](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)    [![Firefox](https://user-images.githubusercontent.com/3750161/214148610-acdef778-753e-470e-8765-6cc97bca85ed.png)](https://addons.mozilla.org/firefox/addon/tampermonkey)    [![Chrome](https://user-images.githubusercontent.com/3750161/233201810-d1026855-0482-44c8-b1ec-c7247134473e.png)](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
 
-[link-chrome]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo 'Web Store Chrome'
-[link-firefox]: https://addons.mozilla.org/firefox/addon/tampermonkey 'Add-ons Firefox'
-[link-edge]: https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd 'Add-ons Edge'
+#### UserScript
 
-### UserScript
+| Greasyfork                                                                                                       | GitHub                                                                                                                                           |
+| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [![Install](https://img.shields.io/badge/-Install-blue)](https://greasyfork.org/scripts/456055-chatgpt-exporter) | [![Install](https://img.shields.io/badge/-Install-blue)](https://raw.githubusercontent.com/pionxzh/chatgpt-exporter/master/dist/chatgpt.user.js) |
 
-| Greasyfork                                                                        | GitHub                                                                                       |
-| --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| [![Install][Install-1-image]][Install-1-url] | [![Install][Install-2-image]][Install-2-url] |
+##
 
-[Install-1-image]: https://img.shields.io/badge/-Install-blue
-[Install-1-url]: https://greasyfork.org/scripts/456055-chatgpt-exporter
-[Install-2-image]: https://img.shields.io/badge/-Install-blue
-[Install-2-url]: https://raw.githubusercontent.com/pionxzh/chatgpt-exporter/master/dist/chatgpt.user.js
+[📚 Format yang Didukung](README\_ID.md#-format-yang-didukung)   |   [💡 Contoh](README\_ID.md#-contoh)   |   [🤝 Kontribusi](README\_ID.md#-kontribusi)   |   [⭐ Sejarah Bintang](README\_ID.md#-sejarah-bintang)
 
-#
+##
 
-[📚 Format yang Didukung](#-format-yang-didukung) &nbsp;&nbsp;|&nbsp;&nbsp; [💡 Contoh](#-contoh) &nbsp;&nbsp;|&nbsp;&nbsp; [🤝 Kontribusi](#-kontribusi) &nbsp;&nbsp;|&nbsp;&nbsp; [⭐ Sejarah Bintang](#-sejarah-bintang)
+### 📚 Format yang Didukung
 
-</div>
+* [Teks](README\_ID.md#teks)
+* [HTML](README\_ID.md#html)
+* [Markdown](README\_ID.md#markdown)
+* [PNG](README\_ID.md#tangkapan-layar)
+* [JSON](README\_ID.md#json)
 
-#
+### 💡 Contoh
 
-## 📚 Format yang Didukung
-
-- [Teks](#teks)
-- [HTML](#html)
-- [Markdown](#markdown)
-- [PNG](#tangkapan-layar)
-- [JSON](#json)
-
-## 💡 Contoh
-
-### Teks
+#### Teks
 
 ```
 Anda:
@@ -80,15 +60,15 @@ ini diterapkan. Penting untuk menggunakan ChatGPT dengan tanggung jawab dan
 mempertimbangkan konsekuensi potensial penggunaannya dalam situasi apa pun.
 ```
 
-### HTML
+#### HTML
 
 <div align="center">
 
-<img width="643" alt="image" src="https://github.com/pionxzh/chatgpt-exporter/assets/9910706/47481c7a-4a6a-433b-b08e-fdf3bbabcb64">
+<img src="https://github.com/pionxzh/chatgpt-exporter/assets/9910706/47481c7a-4a6a-433b-b08e-fdf3bbabcb64" alt="image" width="643">
 
 </div>
 
-### Markdown
+#### Markdown
 
 ```
 ---
@@ -116,19 +96,20 @@ ini diterapkan. Penting untuk menggunakan ChatGPT dengan tanggung jawab dan
 mempertimbangkan konsekuensi potensial penggunaannya dalam situasi apa pun.
 ```
 
-### Tangkapan Layar
+#### Tangkapan Layar
 
 <div align="center">
 
-<img width="480" src="https://user-images.githubusercontent.com/9910706/205663680-6ac97fac-39b0-495c-bee4-8ef37713a9ae.png" />
+<img src="https://user-images.githubusercontent.com/9910706/205663680-6ac97fac-39b0-495c-bee4-8ef37713a9ae.png" alt="" width="480">
 
 </div>
 
-### JSON
+#### JSON
 
 Konten mentah dari API `https://chat.openai.com/backend-api/conversation/[id]`
 
 <details>
+
 <summary>Klik untuk melihat</summary>
 
 ```json
@@ -228,16 +209,17 @@ Konten mentah dari API `https://chat.openai.com/backend-api/conversation/[id]`
     "current_node": "7027f1a5-8bd5-4463-9869-8a1d1db2f9a1"
 }
 ```
+
 </details>
 
-## 🤝 Kontribusi
+### 🤝 Kontribusi
 
-Lihat [CONTRIBUTING.md](./CONTRIBUTING.md)
+Lihat [CONTRIBUTING.md](CONTRIBUTING.md)
 
-## ⭐ Sejarah Bintang
+### ⭐ Sejarah Bintang
 
 <div align="center">
 
-<img src="https://api.star-history.com/svg?repos=pionxzh/chatgpt-exporter&type=Date" width="600" height="400" alt="Star History Chart" valign="middle">
+<img src="https://api.star-history.com/svg?repos=pionxzh/chatgpt-exporter&#x26;type=Date" alt="Star History Chart" height="400" width="600">
 
 </div>

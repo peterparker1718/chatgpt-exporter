@@ -1,4 +1,4 @@
-# 🤝 Contributing
+# Contributing
 
 We're excited that you're interested in contributing to this project! Before submitting your contribution, please read through the following guide.
 
