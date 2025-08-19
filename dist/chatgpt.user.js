@@ -23362,7 +23362,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
     y$1(() => {
       setChecked(checked);
     }, [checked]);
-    return /* @__PURE__ */ u$5("label", { className: `CheckBoxLabel ${className ?? ""}`, disabled, children: [
+    return /* @__PURE__ */ u$5("label", { className: `CheckBoxLabel ${className ?? ""} ${disabled ? "disabled" : ""}`, children: [
       /* @__PURE__ */ u$5("span", { className: "IconWrapper", children: [
         /* @__PURE__ */ u$5(
           "input",
@@ -23750,10 +23750,9 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
     return /* @__PURE__ */ u$5(
       "div",
       {
-        className: `menu-item flex py-3 px-3 items-center gap-3 rounded-md hover:bg-gray-500/10 transition-colors duration-200 text-white cursor-pointer text-sm mb-2 flex-shrink-0 border border-white/20 ${className}`,
-        onClick: handleClick,
-        onTouchStart: handleClick,
-        disabled,
+        className: `menu-item flex py-3 px-3 items-center gap-3 rounded-md hover:bg-gray-500/10 transition-colors duration-200 text-white cursor-pointer text-sm mb-2 flex-shrink-0 border border-white/20 ${className} ${disabled ? "disabled" : ""}`,
+        onClick: disabled ? void 0 : handleClick,
+        onTouchStart: disabled ? void 0 : handleClick,
         title: title2,
         children: loading ? /* @__PURE__ */ u$5("div", { className: "flex justify-center items-center w-full h-full", children: /* @__PURE__ */ u$5(IconLoading, { className: "w-4 h-4" }) }) : /* @__PURE__ */ u$5(k$3, { children: [
           Icon && /* @__PURE__ */ u$5(Icon, {}),
